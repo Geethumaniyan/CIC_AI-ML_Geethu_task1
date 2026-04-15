@@ -88,4 +88,4 @@ print("Squares:", squares)
 
 # 2. Even numbers from 1–20
 evens = [i for i in range(1, 21) if i % 2 == 0]
-print("Even numbers:", evens)s
+print("Even numbers:", evens)
