@@ -67,7 +67,7 @@ students = {
 }
 
 print(students)
-#find topper list
+#find topper list--------------------------------------------------------------------------
 students = {
     "A": 85,
     "B": 90,
@@ -76,7 +76,7 @@ students = {
 
 topper = max(students, key=students.get)
 print("Topper:", topper)
-#calculate average
+#calculate average--------------------------------------------------------------------
 students = {
     "A": 85,
     "B": 90,
@@ -85,7 +85,7 @@ students = {
 
 avg = sum(students.values()) / len(students)
 print("Average:", avg)
-#filter passed student
+#filter passed student------------------------------------------------------------------
 students = {
     "A": 85,
     "B": 40,
@@ -109,7 +109,7 @@ list2 = [3, 4, 5]
 merged = list(set(list1 + list2))
 
 print(merged)
-#find ferquency of element
+#find ferquency of element----------------------------------------------------------------------------------------
 numbers = [1, 2, 2, 3, 3, 3]
 
 freq = {}
