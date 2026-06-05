@@ -1,0 +1,215 @@
+=========================================
+AI/ML Internship – Day 34 Tasks
+Module 7: Introduction to Machine Learning
+=========================================
+
+TASK 1: THEORY ANSWERS
+
+1. What is Machine Learning?
+
+Machine Learning (ML) is a branch of Artificial Intelligence that enables computers to learn from data and make predictions without being explicitly programmed.
+
+--------------------------------------------------
+
+2. Why is ML Important?
+
+Machine Learning is important because:
+
+• It automates tasks
+• It predicts future outcomes
+• It analyzes large amounts of data quickly
+• It improves decision-making
+• It helps build intelligent systems
+
+--------------------------------------------------
+
+3. What is a Dataset?
+
+A dataset is a collection of data used for training and testing machine learning models.
+
+--------------------------------------------------
+
+4. Difference Between AI and ML
+
+Artificial Intelligence (AI):
+• Makes machines intelligent
+• Uses rules and reasoning
+• Broader concept
+
+Machine Learning (ML):
+• Subset of AI
+• Learns from data automatically
+• Makes predictions based on patterns
+
+--------------------------------------------------
+
+5. Types of Machine Learning
+
+1. Supervised Learning
+2. Unsupervised Learning
+3. Reinforcement Learning
+
+==================================================
+TASK 2: REAL-WORLD ML EXAMPLES
+==================================================
+
+1. List 5 ML Applications
+
+• YouTube Recommendations
+• Netflix Suggestions
+• Face Unlock in Smartphones
+• Spam Email Detection
+• Google Maps Traffic Prediction
+
+--------------------------------------------------
+
+2. Explain Spam Detection
+
+Spam detection uses machine learning algorithms to classify emails as spam or non-spam. The model learns from previously labeled emails and predicts whether a new email is unwanted.
+
+--------------------------------------------------
+
+3. Explain Recommendation System
+
+A recommendation system suggests products, movies, videos, or songs based on user preferences and previous behavior.
+
+Examples:
+• Netflix movie recommendations
+• YouTube video suggestions
+• Amazon product recommendations
+
+==================================================
+TASK 3: SUPERVISED LEARNING PRACTICE
+==================================================
+
+1. Create Student Marks Dataset
+
+Study Hours | Marks
+------------|------
+1           | 25
+2           | 40
+3           | 55
+4           | 70
+5           | 80
+6           | 90
+
+--------------------------------------------------
+
+2. Identify Features and Labels
+
+Feature:
+Study Hours
+
+Label:
+Marks
+
+--------------------------------------------------
+
+3. Explain Prediction Logic
+
+The model learns that as study hours increase, marks generally increase. When a new study hour value is provided, the model predicts the expected marks based on learned patterns.
+
+==================================================
+TASK 4: UNSUPERVISED LEARNING PRACTICE
+==================================================
+
+1. Customer Grouping Example
+
+An online shopping website groups customers based on their purchasing behavior and spending habits.
+
+--------------------------------------------------
+
+2. Pattern Finding Example
+
+A supermarket identifies that customers who buy bread often buy butter as well.
+
+--------------------------------------------------
+
+3. Clustering Example
+
+A bank clusters customers into:
+
+• High-value customers
+• Medium-value customers
+• Low-value customers
+
+==================================================
+TASK 5: REINFORCEMENT LEARNING PRACTICE
+==================================================
+
+1. Robot Learning Example
+
+A robot learns to walk through trial and error. Correct movements receive rewards, while incorrect movements receive penalties.
+
+--------------------------------------------------
+
+2. AI Game Example
+
+An AI system learns to play chess by practicing many games and receiving rewards for winning moves.
+
+--------------------------------------------------
+
+3. Reward/Penalty Explanation
+
+Reward:
+Positive feedback given when the model performs a correct action.
+
+Penalty:
+Negative feedback given when the model performs an incorrect action.
+
+The goal is to maximize rewards and minimize penalties.
+
+==================================================
+TASK 6: MACHINE LEARNING WORKFLOW
+==================================================
+
+1. Draw ML Workflow Diagram
+
+Collect Data
+     ↓
+Clean Data
+     ↓
+Train Model
+     ↓
+Test Model
+     ↓
+Prediction
+
+--------------------------------------------------
+
+2. Explain Each Step
+
+Collect Data:
+Gather data from different sources.
+
+Clean Data:
+Remove errors, duplicates, and missing values.
+
+Train Model:
+Teach the model using training data.
+
+Test Model:
+Evaluate the model's performance.
+
+Prediction:
+Use the trained model to predict outcomes for new data.
+
+--------------------------------------------------
+
+3. Give Real-World Example
+
+House Price Prediction
+
+Step 1: Collect house data such as area, number of rooms, and location.
+
+Step 2: Clean the data by removing errors and missing values.
+
+Step 3: Train the machine learning model.
+
+Step 4: Test the model using sample data.
+
+Step 5: Predict the price of a new house.
+
+=========================================
+END OF DAY 34 TASKS
+=========================================
