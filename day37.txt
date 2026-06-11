@@ -1,0 +1,217 @@
+AI/ML Internship – Day 37
+Module 7: Classification vs Regression in Machine Learning
+
+=========================================
+Task 1: Theory Answers
+=========================================
+
+1. What is Regression?
+
+Regression is a supervised machine learning technique used to predict continuous numerical values. The output is always a number.
+
+Examples:
+- House price prediction
+- Salary prediction
+- Temperature prediction
+- Sales forecasting
+
+2. What is Classification?
+
+Classification is a supervised machine learning technique used to predict categories or labels. The output belongs to a specific class.
+
+Examples:
+- Spam or Not Spam
+- Pass or Fail
+- Disease or No Disease
+- Cat or Dog
+
+3. Difference Between Regression and Classification
+
+| Regression | Classification |
+|------------|---------------|
+| Predicts numerical values | Predicts categories |
+| Continuous output | Discrete output |
+| Example: Salary Prediction | Example: Spam Detection |
+| Output is a number | Output is a label |
+
+4. What is Continuous Data?
+
+Continuous data can take any numerical value within a range.
+
+Examples:
+- Height
+- Weight
+- Salary
+- Temperature
+
+5. What is Categorical Data?
+
+Categorical data is divided into groups or categories.
+
+Examples:
+- Male/Female
+- Pass/Fail
+- Spam/Not Spam
+- Yes/No
+
+=========================================
+Task 2: Regression Practice
+=========================================
+
+1. Marks Prediction Dataset
+
+| Study Hours | Marks |
+|------------|-------|
+| 1 | 20 |
+| 2 | 35 |
+| 3 | 50 |
+| 4 | 65 |
+| 5 | 80 |
+
+2. Salary Prediction Dataset
+
+| Experience (Years) | Salary |
+|-------------------|---------|
+| 1 | 20000 |
+| 2 | 30000 |
+| 3 | 40000 |
+| 4 | 50000 |
+| 5 | 60000 |
+
+3. Sales Prediction Dataset
+
+| Month | Sales |
+|--------|-------|
+| Jan | 1000 |
+| Feb | 1500 |
+| Mar | 2000 |
+| Apr | 2500 |
+| May | 3000 |
+
+=========================================
+Task 3: Classification Practice
+=========================================
+
+1. Pass/Fail Prediction
+
+| Study Hours | Result |
+|------------|--------|
+| 1 | Fail |
+| 2 | Fail |
+| 3 | Fail |
+| 4 | Pass |
+| 5 | Pass |
+
+2. Spam/Not Spam Example
+
+| Email Content | Category |
+|--------------|----------|
+| Win a free prize now | Spam |
+| Meeting at 10 AM | Not Spam |
+| Claim your reward | Spam |
+| Project update attached | Not Spam |
+
+3. Disease Prediction Example
+
+| Fever | Cough | Disease |
+|--------|--------|---------|
+| Yes | Yes | Sick |
+| Yes | No | Sick |
+| No | No | Healthy |
+| No | Yes | Healthy |
+
+=========================================
+Task 4: Identify Problem Type
+=========================================
+
+1. House Price Prediction → Regression
+2. Face Recognition → Classification
+3. Weather Forecasting → Regression
+4. Fraud Detection → Classification
+5. Student Marks Prediction → Regression
+
+=========================================
+Task 5: Dataset Analysis
+=========================================
+
+1. Regression Dataset
+
+| Experience | Salary |
+|-----------|--------|
+| 1 | 20000 |
+| 2 | 30000 |
+| 3 | 40000 |
+| 4 | 50000 |
+
+Feature:
+- Experience
+
+Label:
+- Salary
+
+2. Classification Dataset
+
+| Study Hours | Result |
+|------------|--------|
+| 1 | Fail |
+| 2 | Fail |
+| 4 | Pass |
+| 5 | Pass |
+
+Feature:
+- Study Hours
+
+Label:
+- Result
+
+3. Features and Labels
+
+Features:
+- Input variables used for prediction.
+
+Examples:
+- Experience
+- Study Hours
+- Age
+
+Labels:
+- Output values to be predicted.
+
+Examples:
+- Salary
+- Marks
+- Result
+
+=========================================
+Task 6: ML Logic Thinking
+=========================================
+
+1. Explain why salary prediction is regression.
+
+Salary prediction is a regression problem because the output is a continuous numerical value. Salaries can have many possible numeric values, so regression algorithms are used.
+
+2. Explain why spam detection is classification.
+
+Spam detection is a classification problem because emails are classified into categories such as Spam or Not Spam. The output is a label rather than a number.
+
+3. Compare Output Types
+
+Regression Output:
+- Numerical values
+- Continuous data
+- Examples: Salary, Marks, Temperature
+
+Classification Output:
+- Categories or labels
+- Discrete data
+- Examples: Pass/Fail, Spam/Not Spam, Disease/No Disease
+
+=========================================
+Conclusion
+=========================================
+
+Regression predicts continuous numerical values.
+Classification predicts categories or labels.
+
+Numeric Output → Regression
+Category Output → Classification
