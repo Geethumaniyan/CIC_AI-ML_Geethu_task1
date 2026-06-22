@@ -1,0 +1,300 @@
+AI/ML Internship – Day 42
+Module 7: Naive Bayes Classification Algorithm
+
+====================================================
+TASK 1: THEORY
+====================================================
+
+1. What is Naive Bayes?
+
+Naive Bayes is a supervised machine learning algorithm used for classification problems. It predicts a class based on probability using Bayes Theorem.
+
+2. What is Probability?
+
+Probability is the chance of an event occurring.
+
+Example:
+If there is a 70% chance of rain tomorrow, the probability of rain is 0.70.
+
+3. Which theorem is used in Naive Bayes?
+
+Naive Bayes uses Bayes Theorem.
+
+4. Advantages of Naive Bayes
+
+• Simple and easy to understand
+• Fast training process
+• Fast prediction
+• Works well with text data
+• Good for large datasets
+• Requires less training data
+
+5. Real-World Applications
+
+• Spam Email Detection
+• Sentiment Analysis
+• Disease Prediction
+• News Classification
+• Document Classification
+• Product Recommendation Categories
+
+====================================================
+TASK 2: DATASET CREATION
+====================================================
+
+1. Student Result Dataset
+
+Hours    Result
+1        Fail
+2        Fail
+3        Fail
+5        Pass
+6        Pass
+7        Pass
+
+Python Code:
+
+import pandas as pd
+
+student_data = {
+    "Hours":[1,2,3,5,6,7],
+    "Result":[0,0,0,1,1,1]
+}
+
+df = pd.DataFrame(student_data)
+print(df)
+
+----------------------------------------------------
+
+2. Disease Dataset
+
+Fever    Cough    Disease
+1        1        Yes
+1        0        Yes
+0        1        No
+0        0        No
+
+Python Code:
+
+import pandas as pd
+
+disease_data = {
+    "Fever":[1,1,0,0],
+    "Cough":[1,0,1,0],
+    "Disease":[1,1,0,0]
+}
+
+df = pd.DataFrame(disease_data)
+print(df)
+
+----------------------------------------------------
+
+3. Spam Dataset
+
+Free    Offer    Spam
+1       1        Yes
+1       0        Yes
+0       1        No
+0       0        No
+
+Python Code:
+
+import pandas as pd
+
+spam_data = {
+    "Free":[1,1,0,0],
+    "Offer":[1,0,1,0],
+    "Spam":[1,1,0,0]
+}
+
+df = pd.DataFrame(spam_data)
+print(df)
+
+====================================================
+TASK 3: MODEL BUILDING
+====================================================
+
+1. Create Naive Bayes Model
+2. Train Model
+3. Make Predictions
+
+Python Code:
+
+import pandas as pd
+from sklearn.naive_bayes import GaussianNB
+
+data = {
+    "Hours":[1,2,3,5,6,7],
+    "Result":[0,0,0,1,1,1]
+}
+
+df = pd.DataFrame(data)
+
+X = df[["Hours"]]
+y = df["Result"]
+
+model = GaussianNB()
+
+model.fit(X, y)
+
+prediction = model.predict([[4]])
+
+print("Prediction:", prediction)
+
+====================================================
+TASK 4: PREDICTION PRACTICE
+====================================================
+
+1. Student Result Prediction
+
+import pandas as pd
+from sklearn.naive_bayes import GaussianNB
+
+data = {
+    "Hours":[1,2,3,5,6,7],
+    "Result":[0,0,0,1,1,1]
+}
+
+df = pd.DataFrame(data)
+
+X = df[["Hours"]]
+y = df["Result"]
+
+model = GaussianNB()
+model.fit(X, y)
+
+prediction = model.predict([[5]])
+
+print("Student Result Prediction:", prediction)
+
+----------------------------------------------------
+
+2. Disease Status Prediction
+
+import pandas as pd
+from sklearn.naive_bayes import GaussianNB
+
+data = {
+    "Fever":[1,1,0,0],
+    "Cough":[1,0,1,0],
+    "Disease":[1,1,0,0]
+}
+
+df = pd.DataFrame(data)
+
+X = df[["Fever","Cough"]]
+y = df["Disease"]
+
+model = GaussianNB()
+model.fit(X, y)
+
+prediction = model.predict([[1,1]])
+
+print("Disease Prediction:", prediction)
+
+----------------------------------------------------
+
+3. Spam Detection Prediction
+
+import pandas as pd
+from sklearn.naive_bayes import GaussianNB
+
+data = {
+    "Free":[1,1,0,0],
+    "Offer":[1,0,1,0],
+    "Spam":[1,1,0,0]
+}
+
+df = pd.DataFrame(data)
+
+X = df[["Free","Offer"]]
+y = df["Spam"]
+
+model = GaussianNB()
+model.fit(X, y)
+
+prediction = model.predict([[1,1]])
+
+print("Spam Prediction:", prediction)
+
+====================================================
+TASK 5: PROBABILITY ACTIVITY
+====================================================
+
+Given:
+
+Total Emails = 200
+Spam Emails = 150
+Not Spam Emails = 50
+
+1. Probability of Spam
+
+P(Spam) = 150 / 200
+
+P(Spam) = 0.75
+
+Answer:
+75% chance that an email is spam.
+
+----------------------------------------------------
+
+2. Probability of Not Spam
+
+P(Not Spam) = 50 / 200
+
+P(Not Spam) = 0.25
+
+Answer:
+25% chance that an email is not spam.
+
+====================================================
+TASK 6: COMPARE ALGORITHMS
+====================================================
+
+1. KNN (K-Nearest Neighbors)
+
+• Distance-based algorithm
+• Used for Classification and Regression
+• Slower for large datasets
+• Instance-based learning
+
+----------------------------------------------------
+
+2. Decision Tree
+
+• Uses decision rules
+• Easy to visualize
+• Good for structured data
+• Can overfit data
+
+----------------------------------------------------
+
+3. Random Forest
+
+• Collection of multiple decision trees
+• Higher accuracy
+• Reduces overfitting
+• More powerful than a single decision tree
+
+----------------------------------------------------
+
+4. Naive Bayes
+
+• Probability-based algorithm
+• Fast training and prediction
+• Works well for text classification
+• Assumes features are independent
+
+----------------------------------------------------
+
+Comparison Table
+
+Algorithm       Method               Speed      Best Use
+KNN             Distance Based       Slow       Small Datasets
+Decision Tree   Decision Rules       Medium     Structured Data
+Random Forest   Multiple Trees       Medium     High Accuracy
+Naive Bayes     Probability Based    Fast       Text Classification
+
+====================================================
+END OF DAY 42 TASKS
+====================================================
